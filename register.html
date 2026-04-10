@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="css/layout.css">
   <link rel="stylesheet" href="css/burger.css">
   <link rel="stylesheet" href="css/cards.css">
-  <link rel="stylesheet" href="css/form.css">
+  <link rel="stylesheet" href="css/forms.css">
   <link rel="icon" type="image/png" href="img/fav.png">
   <title>Emergency Site</title>
 </head>
@@ -37,15 +37,68 @@
     <h1>INDBERET</h1>
     <section id="form-section">
       <article id="form-info">
-        <h2>Overskrift</h2>
-        <p>Tekst</p>
+        <h2>Indberet forurening af drikkevand</h2>
+        <p>Brug formularen nedenfor til at registrere forurening af drikkevand. Oplys gerne så mange informationer som
+          muligt, så det kan håndteres optimalt.</p>
       </article>
-      <form id="webform"></form>
+      <form id="webform">
+        <h2 class="form-group">Indberet</h2>
+        <div class="form-group">
+          <label for="email"> Email adresse </label>
+          <input type="email" id="email" name="email" required>
+          <p class="error" id="email-error">Indtast en gyldig email</p>
+        </div>
+        <div class="form-group">
+          <fieldset>
+            <legend>
+              Må vi kontakte dig, hvis vi har brug for mere information?
+            </legend>
+            <label for="radio_ja">
+              <input type="radio" id="radio_ja" name="kontakt" value="Ja" required>
+              Ja
+            </label>
+            <label for="radio_nej">
+              <input type="radio" id="radio_nej" name="kontakt" value="Nej">
+              Nej
+            </label>
+
+          </fieldset>
+          <p class="error" id="kontakt-error">Vælg om vi må kontakte dig</p>
+        </div>
+
+        <div class="form-group">
+          <label for="indberet">Hvad indberetter du?</label>
+          <textarea id="indberet" name="indberet" cols="40" rows="8"
+            placeholder="Beskriv i så mange detaljer som muligt" required minlength="10"></textarea>
+          <p class="error" id="indberet-error">Skriv mindst 10 tegn</p>
+        </div>
+        <div class="form-group">
+          <p>Registrer tid og sted for episoden</p>
+          <label for="tid">Tid</label>
+          <input type="datetime-local" id="tid" name="tid" required>
+          <p class="error" id="tid-error">Registrer tidspunkt</p>
+
+          <label for="sted">Sted</label>
+          <input type="text" id="sted" name="sted" required>
+          <p class="error" id="tid-error">Registrer sted</p>
+        </div>
+        <div class="form-group">
+          <label for="bemaerk"> Andre bemærkninger? <span class="optional">(Kan udelades)</span> </label>
+          <textarea name="bemaerk" id="bemaerk" cols="40" rows="8"></textarea>
+        </div>
+
+        <button class="form-knap" type="submit">Indberet</button>
+      </form>
     </section>
     <section id="form-summary">
-      <h2>Summary</h2>
+      <h2>Din indberetning</h2>
       <article>
-        <p class="placeholder">Opsummering</p>
+        <p> <span id="outputEmail"></span></p>
+        <p> <span id="outputKontakt"></span></p>
+        <p> <span id="outputIndberet"></span></p>
+        <p> <span id="outputTid"></span></p>
+        <p> <span id="outputSted"></span></p>
+        <p> <span id="outputBemaerk"></span></p>
       </article>
     </section>
   </main>
@@ -71,6 +124,8 @@
       </ul>
     </nav>
   </footer>
+  <script src="js/main.js"></script>
+
 </body>
 
 </html>

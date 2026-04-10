@@ -5,12 +5,13 @@
 }
 body {
   font-family: var(--font-family-sans);
-  color: var(--color-text);
-  background-color: var(--color-bg);
+  color: var(--black);
+  background-color: var(--light-grey);
+  max-width: 1200px;
 }
 header {
   height: min-content;
-  background-color: var(--color-head-bg);
+  background-color: var(--medium-grey);
 }
 #main-disclamer {
   height: 225px;
@@ -124,4 +125,10 @@ footer {
 
 footer a {
   font-size: 0.7rem;
+}
+
+/* EGEN STYLING */
+
+main {
+  margin: 2rem;
 }

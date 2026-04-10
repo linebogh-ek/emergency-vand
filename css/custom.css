@@ -1,21 +1,21 @@
 :root {
   /* Background color */
-  --color-bg: #cfceca;
+  --color-bg: #f5f5f5;
 
   /* Header background color */
-  --color-head-bg: #625e5c;
+  /* --color-head-bg: #e4fbff; */
 
-  /* Logotype */
-  --color-logotype-bg: #2a2828;
-  --color-text-logotype: #c1bfb8;
-  --font-logotype-size: 1rem;
+  /* Logotype
+  --color-logotype-bg: #f1feff;
+  --color-text-logotype: #e3f8ff;
+  --font-logotype-size: 1rem; */
 
   /* Global menu */
-  --color-menu-bg: #5a5b5e;
+  --color-menu-bg: #e3e3e3;
   /* Links */
-  --color-link-bg: #78766e;
+  --color-link-bg: #f5f5f5;
   --color-link-hover: #fff;
-  --color-link-active: #99958f;
+  --color-link-active: #e7f8ff;
   --border-radius-links: 1px;
 
   /* Headlines (size)*/
@@ -28,7 +28,7 @@
   --font-sub1-size: 1rem;
 
   /* Headlines (color) */
-  --color-headline-bg: #4b4545;
+  --color-headline-bg: #ffffff;
 
   /* Tekst */
   --color-text: #000;
@@ -44,18 +44,34 @@
   --border-radius: 5px;
 
   /* Cards */
-  --color-card-bg: #e3e1d8;
-  --color-card-bg-inverted: #4d4e4f;
+  --color-card-bg: #cff8ff;
+  --color-card-bg-inverted: #85b9ed;
   --color-cta-card-bg: #847f7e;
   --color-cta-card-bg-inverted: #c0bfb9;
 
   /* Fonts & font weights*/
-  --font-family-sans: ui-sans-serif;
+  --font-family-sans: "Rubik", ui-sans-serif;
   --font-weight-bold: 700;
   --font-weight-medium: 500;
   --font-weight-regular: 300;
   --font-weight-light: 200;
 
   /* Infographics background colors*/
-  --color-info-bg: #676161;
+  --color-info-bg: #faf9f9;
+}
+
+/* MY STYLING */
+:root {
+  /* 
+  Colours */
+
+  --light-grey: #f5f5f5;
+  --medium-grey: #e3e3e3;
+  --dark-grey: #d9d8d8;
+
+  --blue-1: #8fc0e4;
+  --blue-2: #2a5283;
+  --blue-3: #194073;
+
+  --black: #000f15;
 }
