@@ -30,3 +30,159 @@
   margin: 0 0 1.2rem 0;
   padding: 0;
 }
+
+/* FRA STARTER */
+html {
+  interpolate-size: allow-keywords;
+  font-family: "Rubik", system-ui, sans-serif;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2 {
+  line-height: 1.25;
+}
+
+p,
+li {
+  text-wrap: pretty;
+}
+
+img,
+svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+label {
+  display: block;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  font-size: max(1em, 16px);
+  padding: 0;
+  margin: 0;
+}
+
+input:where([type="checkbox"], [type="radio"]) {
+  width: 1em;
+  height: 1em;
+}
+
+textarea {
+  resize: none;
+  min-height: 4lh;
+}
+
+legend {
+  padding: 0;
+}
+
+select,
+::picker(select) {
+  appearance: base-select;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  white-space: nowrap;
+  clip-path: inset(100%);
+}
+
+/* STARTER SLUT */
+
+/* EGEN KODE HERFRA */
+
+form {
+  max-width: 500px;
+}
+
+fieldset {
+  max-width: 300px;
+  font-style: none;
+  border: none;
+  padding-left: 0;
+}
+
+.form-group {
+  margin: 2rem;
+}
+
+textarea {
+  font-family: "Rubik";
+  color: gray;
+  padding-top: 0.5rem;
+  margin-top: 1rem;
+}
+
+label:has(input) {
+  display: flex;
+  align-items: center;
+  gap: 1ch;
+}
+
+input,
+textarea {
+  border-radius: 5px;
+  border: 1.5px solid black;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+input:focus,
+textarea:focus {
+  outline: 1.5px solid blue;
+  outline-offset: 2px;
+}
+
+label {
+  padding-bottom: 10px;
+}
+
+.form-knap {
+  padding: 0.35rem 0.7rem;
+  background-color: #f1fbff;
+  display: inline-block;
+  color: #212121;
+  text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.12);
+  border: solid 1px #696968;
+  border-radius: 7px;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.12);
+  transition:
+    background-color 0.1s ease-in-out,
+    text-shadow 0.1s ease-in-out,
+    box-shadow 0.1s ease-in-out;
+}
+
+.form-knap:hover {
+  background-color: #daf3fc;
+  color: #212121;
+  text-shadow: 2px 2px 5px #f1fbff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.235);
+}
+
+.error {
+  color: darkred;
+}
+/* 
+/* Skjul fejlmeddelelsen som standard */
+.error {
+  display: none;
+}
+
+.optional {
+  font-style: italic;
+  font-size: 0.95em;
+  color: #666;
+}
