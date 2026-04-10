@@ -173,12 +173,25 @@ label {
 }
 
 .error {
-  color: darkred;
+  display: none;
 }
-/* 
-/* Skjul fejlmeddelelsen som standard */
+
 .error {
   display: none;
+  color: darkred;
+  font-size: 0.9rem;
+  margin-top: 0.25rem;
+}
+
+.form-group:has(:user-invalid) .error {
+  display: block;
+}
+
+.form-group:has(input:user-invalid) input,
+.form-group:has(textarea:user-invalid) textarea,
+.form-group:has(input[type="radio"]:user-invalid) input {
+  outline: 2px solid red;
+  border-color: darkred;
 }
 
 .optional {
