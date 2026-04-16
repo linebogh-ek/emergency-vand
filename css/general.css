@@ -11,7 +11,8 @@ body {
 }
 header {
   height: min-content;
-  background-color: var(--medium-grey);
+  padding: 30px;
+  background-color: var(--blue-3);
 }
 #main-disclamer {
   height: 225px;
@@ -131,4 +132,55 @@ footer a {
 
 main {
   margin: 2rem;
+}
+
+.grid_3-2 {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+}
+
+.flexbox {
+  display: flex;
+  flex-direction: column;
+}
+
+.nyhed {
+  background-color: azure;
+  margin: 2rem;
+  text-decoration: none;
+}
+
+.nyhed > a {
+  text-decoration: none;
+}
+
+.nyhed_horisontal {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  padding: 2rem;
+}
+
+.nyhed_img {
+  width: 100%;
+  max-width: 300px;
+  margin:;
+}
+
+.nyhed_titel {
+  width: 100%;
+  text-decoration: none;
+  color: var(--black);
+  font-size: 1.5rem;
+}
+
+.nyhed_vertikal {
+  align-items: center;
+padding: 2rem;
+gap: 1rem;
+}
+
+.nyhed_vertikal > h2 {
+  max-width: 300px
+};
 }
