@@ -11,7 +11,7 @@
   --font-logotype-size: 1rem; */
 
   /* Global menu */
-  --color-menu-bg: #e3e3e3;
+  --color-menu-bg: var(--blue-3);
   /* Links */
   --color-link-bg: #f5f5f5;
   --color-link-hover: #fff;
@@ -31,7 +31,7 @@
   --color-headline-bg: #ffffff;
 
   /* Tekst */
-  --color-text: #000;
+  --color-text: var(--black);
   --color-text-inverted: #cdccc4;
 
   /* Andet tekst */
@@ -44,7 +44,7 @@
   --border-radius: 5px;
 
   /* Cards */
-  --color-card-bg: #cff8ff;
+  --color-card-bg: var(--medium-grey);
   --color-card-bg-inverted: #85b9ed;
   --color-cta-card-bg: #847f7e;
   --color-cta-card-bg-inverted: #c0bfb9;
@@ -71,7 +71,7 @@
 
   --blue-1: #8fc0e4;
   --blue-2: #2a5283;
-  --blue-3: #194073;
+  --blue-3: #1a4b9c;
 
   --black: #000f15;
 }
