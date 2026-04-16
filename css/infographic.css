@@ -41,10 +41,18 @@
   background-color: var(--color-card-bg-inverted);
 }
 
-#Pesticider,
-#Korn,
+#pesticider_info,
 #Grise,
-#Tap,
-#Grundvand {
+#vand_info {
   cursor: pointer;
+  transition: filter 0.1s ease;
+}
+
+#pesticider_info:hover,
+#Grise:hover {
+  filter: brightness(120%);
+}
+
+#vand_info:hover {
+  filter: brightness(115%);
 }
