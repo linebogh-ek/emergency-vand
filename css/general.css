@@ -12,7 +12,7 @@ body {
 header {
   height: min-content;
   padding: 30px;
-  background-color: var(--blue-3);
+  background-color: #1a4b9c;
 }
 #main-disclamer {
   height: 225px;
@@ -157,7 +157,8 @@ main {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 1rem;
-  padding: 2rem;
+  padding: 40px 0 40px 20px;
+  height: minmax(200px, min-content);
 }
 
 .nyhed_img {
@@ -170,6 +171,8 @@ main {
   text-decoration: none;
   color: var(--black);
   font-size: 1.5rem;
+  padding: calc(1.1rem / 1.5) 1rem calc(1.1rem / 2) 1rem;
+  margin: 0 0 0.5rem 0;
 }
 
 .nyhed_vertikal {
@@ -180,4 +183,58 @@ main {
 
 .nyhed_vertikal > h2 {
   max-width: 300px;
+}
+
+/* ACCORDION  START ______________________ */
+
+html {
+  interpolate-size: allow-keywords;
+}
+
+::details-content {
+  height: 0;
+  transition: 0.3s allow-discrete;
+  overflow: clip;
+}
+
+[open]::details-content {
+  height: auto;
+}
+details {
+  outline: 2px solid var(--black);
+}
+
+summary {
+  background: var(--medium-grey);
+  cursor: pointer;
+  padding: 1rem;
+}
+
+.accordion_content {
+  padding: 1rem;
+  background: white;
+}
+
+.accordion_content p {
+  margin: 0;
+}
+
+summary::marker {
+  content: none;
+}
+
+summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+summary::after {
+  content: "+";
+  font-size: 1.6rem;
+}
+
+[open] summary::after {
+  content: "-";
+  font-size: 1.6rem;
 }
