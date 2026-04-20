@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="css/layout.css">
   <link rel="stylesheet" href="css/burger.css">
   <link rel="stylesheet" href="css/cards.css">
+  <link rel="stylesheet" href="css/forside.css">
   <link rel="icon" type="image/png" href="img/favicon.png">
 
   <title>Emergency Site</title>
@@ -35,70 +36,131 @@
 
   <main>
 
-    <section>
+    <section id="hero">
 
-      <h1></h1>
-      <div class="grid_3-2">
+      <h1 id="hero-title">Forurenet <br> drikkevand</h1>
+      <p id="hero-sub">Lær mere, indberet forurening og følg med i de seneste nyheder</p>
 
-        <div class="flexbox">
-          <article class="nyhed">
-            <a href="infografik.html" class="nyhed_horisontal">
-              <img class="nyhed_img" src="https://picsum.photos/300/200" alt="Nature image">
-              <h2 class="nyhed_titel">Sådan forurener landbruget dit drikkevand</h2>
-            </a>
-          </article>
-
-          <article class="nyhed">
-            <a href="indberet.html" class="nyhed_horisontal">
-              <img class="nyhed_img" src="https://picsum.photos/300/200" alt="Nature image">
-              <h2 class="nyhed_titel">Mistænker du forurening? Indberet her</h2>
-            </a>
-          </article>
-          <article class="nyhed">
-            <!-- RET LINK -->
-            <a href="index.html" class="nyhed_horisontal">
-
-              <img class="nyhed_img" src="https://picsum.photos/300/200" alt="Nature image">
-              <h2 class="nyhed_titel">Der skal handles nu! Beskyt vores drikkevand</h2>
-            </a>
-          </article>
-        </div>
-        <article class="nyhed">
-          <!-- RET LINK -->
-          <a href="" class="nyhed_vertikal flexbox">
-
-            <img class="nyhed_img" src="https://picsum.photos/300/200" alt="Nature image">
-            <h2 class="nyhed_titel"><strong>SENESTE NYT: </strong>Drikkevand forurenet</h2>
-          </a>
-
-        </article>
-
-      </div>
+      <a id="hero-btn" href="#nyheder">Seneste nyt</a>
     </section>
-  </main>
 
-  <footer>
-    <nav>
-      <ul>
-        <li><a href="#">link</a></li>
-        <li><a href="#">link</a></li>
-        <li><a href="#">link</a></li>
-        <li><a href="#">link</a></li>
-      </ul>
-      <ul>
-        <li><a href="#">link</a></li>
-        <li><a href="#">link</a></li>
-        <li><a href="#">link</a></li>
-        <li><a href="#">link</a></li>
-      </ul>
-      <ul>
-        <li><a href="#">link</a></li>
-        <li><a href="#">link</a></li>
-        <li><a href="#">link</a></li>
-        <li><a href="#">link</a></li>
-      </ul>
-    </nav>
-  </footer>
+    <section id="index-2">
+      <section class="card">
+        <img class="infografik_png" src="img/frontpage/infografik-png.png" alt="">
+        <div>
+          <h2>Sådan bliver dit drikkevand forurenet</h2>
+          <p>Lær mere om, hvordan animalsk landbrug forurener dit drikkevand</p>
+        </div>
+      </section>
+      <section class="card">
+        <img class="nyhed_img" src="https://picsum.photos/300/200" alt="Nature image">
+        <div>
+
+          <h2>Mistænker du forurening? Indberet her</h2>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum blanditiis quisquam ducimus corrupti!
+          </p>
+        </div>
+      </section>
+    </section>
+
+
+    <!-- BREAKING NEWS SECTION -->
+
+    <section id="news">
+      <article class="article">
+        <img class="article-img" src="https://picsum.photos/300/200" alt="Nature image">
+        <h2>Lorem ipsum dolor sit amet consectetur</h2>
+      </article>
+
+      <article class="article">
+        <img class="article-img" src="https://picsum.photos/300/200" alt="Nature image">
+        <h2>Lorem ipsum, dolor sit amet consectetur adipisicing.</h2>
+      </article>
+
+      <article class="article">
+        <img class="article-img" src="https://picsum.photos/300/200" alt="Nature image">
+        <h2 class="article-title">Lorem ipsum dolor sit.</h2>
+      </article>
+    </section>
+
+
+
+
+    <h2>Ofte stillede spørgsmål</h2>
+
+    <details name="accordion">
+      <summary>Hvorfor er det vigtigt at beskytte grundvandet?</summary>
+      <div class="accordion_content">
+        <p>
+          Næsten 100 % af dansk drikkevand kommer fra grundvand. Når grundvandet
+          bliver forurenet, kan det få betydning for både folkesundheden og vores
+          adgang til rent drikkevand i fremtiden. Forurening er ofte svær at opdage,
+          og endnu sværere at fjerne igen.
+        </p>
+      </div>
+    </details>
+
+    <details name="accordion">
+      <summary>Hvad betyder forurening af drikkevand for mig som borger?</summary>
+      <div class="accordion_content">
+        <p>
+          Forurening af grundvand handler ikke kun om miljø – det handler også om
+          det vand, der kommer ud af hanen. Hvis forureningen når drikkevandet, kan
+          det påvirke sundheden og gøre det sværere og dyrere at sikre rent vand
+          lokalt.
+        </p>
+      </div>
+    </details>
+
+    <details name="accordion">
+      <summary>Hvorfor er det bedre at forebygge end at rense?</summary>
+      <div class="accordion_content">
+        <p>
+          Når pesticider, nitrat eller andre stoffer først er trængt ned i
+          grundvandet, kan de blive der i mange år. Det er både teknisk vanskeligt
+          og dyrt at rense forurenet grundvand. Derfor er forebyggelse en langt mere
+          effektiv måde at beskytte vores drikkevand på.
+        </p>
+      </div>
+    </details>
+
+    <details name="accordion">
+      <summary>Hvad kan jeg selv gøre?</summary>
+      <div class="accordion_content">
+        <p>
+          Du kan blandt andet støtte initiativer, der beskytter grundvandet, holde
+          dig orienteret om drikkevand i dit lokalområde og efterspørge politiske
+          løsninger, der mindsker forurening fra landbruget. Som borger og forbruger
+          kan du være med til at lægge pres for bedre beskyttelse af vores fælles
+          drikkevand.
+        </p>
+      </div>
+    </details>
+
+
+    <footer>
+      <nav>
+        <ul>
+          <li><a href="#">link</a></li>
+          <li><a href="#">link</a></li>
+          <li><a href="#">link</a></li>
+          <li><a href="#">link</a></li>
+        </ul>
+        <ul>
+          <li><a href="#">link</a></li>
+          <li><a href="#">link</a></li>
+          <li><a href="#">link</a></li>
+          <li><a href="#">link</a></li>
+        </ul>
+        <ul>
+          <li><a href="#">link</a></li>
+          <li><a href="#">link</a></li>
+          <li><a href="#">link</a></li>
+          <li><a href="#">link</a></li>
+        </ul>
+      </nav>
+    </footer>
+    <script src="js/burger.js"></script>
 </body>
 
 </html>
