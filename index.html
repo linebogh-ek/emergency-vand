@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="css/burger.css">
   <link rel="stylesheet" href="css/cards.css">
   <link rel="stylesheet" href="css/forside.css">
+  <link rel="stylesheet" href="css/dark-mode.css">
   <link rel="icon" type="image/png" href="img/favicon.png">
 
   <title>Emergency Site</title>
@@ -25,6 +26,10 @@
       <ul class="menu">
         <li><a class="menuItem" href="infografik.html">Lær mere</a></li>
         <li><a class="menuItem" href="indberet.html">Indberet</a></li>
+        <li> <label>
+            <span class="visually-hidden">Theme</span>
+            <input id="theme-toggle" type="checkbox">
+          </label></li>
       </ul>
       <button class="burger">
         <span class="line"></span>
@@ -53,7 +58,8 @@
         </div>
       </section>
       <section class="card">
-        <img class="nyhed_img" src="https://picsum.photos/300/200" alt="Nature image">
+        <img class="nyhed_img" src="img/frontpage/card-indberet.webp"
+          alt="Vandhane med forurenet vand samt advarselstegn med udråbstegn">
         <div>
 
           <h2>Mistænker du forurening? Indberet her</h2>
@@ -159,8 +165,15 @@
           <li><a href="#">link</a></li>
         </ul>
       </nav>
+      <section>
+
+
+      </section>
+
     </footer>
     <script src="js/burger.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/dark-mode.js"></script>
 </body>
 
 </html>
