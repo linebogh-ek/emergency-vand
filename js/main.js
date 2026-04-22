@@ -1,6 +1,5 @@
 const form = document.querySelector("#webform");
 
-const formData = new FormData(form);
 const outputEmail = document.querySelector("#outputEmail");
 const outputKontakt = document.querySelector("#outputKontakt");
 const outputIndberet = document.querySelector("#outputIndberet");
@@ -23,6 +22,8 @@ function handleSubmit(event) {
   event.preventDefault();
 
   // 2
+  const formData = new FormData(form);
+
   outputEmail.textContent = "Email: " + formData.get("email");
   outputKontakt.textContent = "Må vi kontakte dig?: " + formData.get("kontakt");
   outputIndberet.textContent =
@@ -33,12 +34,3 @@ function handleSubmit(event) {
   // 3
   form.reset();
 }
-
-// // DARK MODE
-// const html = document.querySelector("html");
-// const btn = document.querySelector("theme-btn");
-
-// function toggleTheme() {
-//   html.classList.toggle("dark");
-// }
-// btn.addEventListener("click", toggleTheme);

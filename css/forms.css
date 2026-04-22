@@ -1,13 +1,13 @@
-#webform {
+#indberet #webform {
   background-color: var(--form-background-color);
 }
 
-#form-section,
-#form-summary {
+#indberet #form-section,
+#indberet #form-summary {
   background-color: var(--info-background-color);
   padding: 0;
 }
-#form-summary h2 {
+#indberet #form-summary h2 {
   line-height: 3rem;
   text-align: center;
   background-color: var(--headline-bg-color-inverted);
@@ -39,31 +39,31 @@ html {
   -webkit-font-smoothing: antialiased;
 }
 
-h1,
-h2 {
+#indberet h1,
+#indberet h2 {
   line-height: 1.25;
 }
 
-p,
-li {
+#indberet p,
+#indberet li {
   text-wrap: pretty;
 }
 
-img,
-svg {
+#indberet img,
+#indberet svg {
   display: block;
   width: 100%;
   height: auto;
 }
 
-label {
+#indberet label {
   display: block;
 }
 
-input,
-button,
-textarea,
-select {
+#indberet input,
+#indberet button,
+#indberet textarea,
+#indberet select {
   font: inherit;
   color: inherit;
   background-color: transparent;
@@ -72,26 +72,26 @@ select {
   margin: 0;
 }
 
-input:where([type="checkbox"], [type="radio"]) {
+#indberet input:where([type="checkbox"], [type="radio"]) {
   width: 1em;
   height: 1em;
 }
 
-textarea {
+#indberet textarea {
   resize: none;
   min-height: 4lh;
 }
 
-legend {
+#indberet legend {
   padding: 0;
 }
 
-select,
+#indberet select,
 ::picker(select) {
   appearance: base-select;
 }
 
-.visually-hidden {
+#indberet .visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -104,53 +104,55 @@ select,
 
 /* EGEN KODE HERFRA */
 
-form {
+#indberet form {
   max-width: 500px;
 }
 
-fieldset {
+#indberet fieldset {
   max-width: 300px;
   font-style: none;
   border: none;
   padding-left: 0;
 }
 
-.form-group {
+#indberet .form-group {
   margin: 2rem;
 }
 
-textarea {
+#indberet textarea {
   font-family: "Rubik";
   color: gray;
   padding-top: 0.5rem;
   margin-top: 1rem;
 }
 
-label:has(input) {
+#indberet label:has(input) {
   display: flex;
   align-items: center;
   gap: 1ch;
 }
 
-input,
-textarea {
+#indberet input,
+#indberet textarea {
   border-radius: 5px;
-  border: 1.5px solid black;
+  background-color: var(--a-layer-2);
+  border: 1.5px solid var(--a-border);
+  padding: 0.5rem;
   margin-top: 10px;
   cursor: pointer;
 }
 
-input:focus,
-textarea:focus {
+#indberet input:focus,
+#indberet textarea:focus {
   outline: 1.5px solid blue;
   outline-offset: 2px;
 }
 
-label {
+#indberet label {
   padding-bottom: 10px;
 }
 
-.form-knap {
+#indberet .form-knap {
   padding: 0.35rem 0.7rem;
   background-color: #f1fbff;
   display: inline-block;
@@ -165,36 +167,36 @@ label {
     box-shadow 0.1s ease-in-out;
 }
 
-.form-knap:hover {
+#indberet .form-knap:hover {
   background-color: #daf3fc;
   color: #212121;
   text-shadow: 2px 2px 5px #f1fbff;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.235);
 }
 
-.error {
+#indberet .error {
   display: none;
 }
 
-.error {
+#indberet .error {
   display: none;
   color: darkred;
   font-size: 0.9rem;
   margin-top: 0.25rem;
 }
 
-.form-group:has(:user-invalid) .error {
+#indberet .form-group:has(:user-invalid) .error {
   display: block;
 }
 
-.form-group:has(input:user-invalid) input,
-.form-group:has(textarea:user-invalid) textarea,
-.form-group:has(input[type="radio"]:user-invalid) input {
+#indberet .form-group:has(input:user-invalid) input,
+#indberet .form-group:has(textarea:user-invalid) textarea,
+#indberet .form-group:has(input[type="radio"]:user-invalid) input {
   outline: 2px solid red;
   border-color: darkred;
 }
 
-.optional {
+#indberet .optional {
   font-style: italic;
   font-size: 0.95em;
   color: #666;
