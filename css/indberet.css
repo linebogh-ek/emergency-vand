@@ -1,0 +1,43 @@
+#indberet #webform {
+  background-color: var(--a-layer-1);
+  padding: 1rem;
+  margin: 1rem;
+}
+
+#form-info {
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+
+.grid_2fr-1fr {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+#form-info {
+  grid-column: span 2;
+}
+
+#form-info h1 {
+  margin: 0;
+  padding: 2rem 0;
+}
+
+#form-info p {
+  font-size: 1.5rem;
+}
+
+#form-summary {
+  margin-top: 5rem;
+  background-color: var(--a-layer-1);
+  max-height: fit-content;
+}
+
+#form-summary p {
+  font-size: 1rem;
+  margin-top: 2rem;
+}
+
+#form-summary h2 {
+  padding: 1rem 0rem 0rem 1rem;
+}

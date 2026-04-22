@@ -11,6 +11,8 @@
   <link rel="stylesheet" href="css/burger.css">
   <link rel="stylesheet" href="css/cards.css">
   <link rel="stylesheet" href="css/forms.css">
+  <link rel="stylesheet" href="css/dark-mode.css">
+  <link rel="stylesheet" href="css/indberet.css">
   <link rel="icon" type="image/png" href="img/favicon.png">
   <title>Emergency Site</title>
 </head>
@@ -19,13 +21,19 @@
   <header>
     <nav>
       <div id="logotype-wrapper" class="logo">
-        <a href="index.html"> LOGO-TYPE </a>
+        <a href="index.html"> <img src="img/logo/Logo-text.svg" alt="Logo og teksten Vand Varsling" width="200"> </a>
       </div>
       <ul class="menu">
-        <li><a class="menuItem" href="instruction.html">Nærkontakt</a></li>
-        <li><a class="menuItem" href="register.html">Indberet</a></li>
+        <li><a class="menuItem" href="index.html">Forside</a></li>
+        <li><a class="menuItem" href="infografik.html">Lær mere</a></li>
+        <li><a class="menuItem" href="indberet.html">Indberet</a></li>
+        <li> <label>
+            <span class="visually-hidden">Theme</span>
+            <input id="theme-toggle" type="checkbox">
+          </label></li>
       </ul>
       <button class="burger">
+        <span class="line"></span>
         <span class="line"></span>
         <span class="line"></span>
         <span class="line"></span>
@@ -34,97 +42,98 @@
   </header>
 
   <main>
-    <h1>INDBERET</h1>
-    <section id="form-section">
+    <div class="grid_2fr-1fr">
       <article id="form-info">
-        <h2>Indberet forurening af drikkevand</h2>
-        <p>Brug formularen nedenfor til at registrere forurening af drikkevand. Oplys gerne så mange informationer som
-          muligt, så det kan håndteres optimalt.</p>
+        <h1>Indberet forurening af drikkevand</h2>
+          <p>Brug formularen nedenfor til at registrere forurening af drikkevand. Oplys gerne så mange informationer
+            som
+            muligt, så det kan håndteres optimalt.</p>
       </article>
-      <form id="webform">
-        <h2 class="form-group">Indberet</h2>
-        <div class="form-group">
-          <label for="email"> Email adresse </label>
-          <input type="email" id="email" name="email" required>
-          <p class="error" id="email-error">Indtast en gyldig email</p>
-        </div>
-        <div class="form-group">
-          <fieldset>
-            <legend>
-              Må vi kontakte dig, hvis vi har brug for mere information?
-            </legend>
-            <label for="radio_ja">
-              <input type="radio" id="radio_ja" name="kontakt" value="Ja" required>
-              Ja
-            </label>
-            <label for="radio_nej">
-              <input type="radio" id="radio_nej" name="kontakt" value="Nej">
-              Nej
-            </label>
+      <section id="form-section">
+        <section id="indberet">
+          <form id="webform">
+            <h2 class="form-group">Indberet forurening</h2>
+            <div class="form-group">
+              <label for="email"> Email adresse </label>
+              <input type="email" id="email" name="email" required>
+              <p class="error" id="email-error">Indtast en gyldig email</p>
+            </div>
+            <div class="form-group">
+              <fieldset>
+                <legend>
+                  Må vi kontakte dig, hvis vi har brug for mere information?
+                </legend>
+                <label for="radio_ja">
+                  <input type="radio" id="radio_ja" name="kontakt" value="Ja" required>
+                  Ja
+                </label>
+                <label for="radio_nej">
+                  <input type="radio" id="radio_nej" name="kontakt" value="Nej">
+                  Nej
+                </label>
 
-          </fieldset>
-          <p class="error" id="kontakt-error">Vælg om vi må kontakte dig</p>
-        </div>
+              </fieldset>
+              <p class="error" id="kontakt-error">Vælg om vi må kontakte dig</p>
+            </div>
 
-        <div class="form-group">
-          <label for="indberet">Hvad indberetter du?</label>
-          <textarea id="indberet" name="indberet" cols="40" rows="8"
-            placeholder="Beskriv i så mange detaljer som muligt" required minlength="10"></textarea>
-          <p class="error" id="indberet-error">Skriv mindst 10 tegn</p>
-        </div>
-        <div class="form-group">
-          <p>Registrer tid og sted for episoden</p>
-          <label for="tid">Tid</label>
-          <input type="datetime-local" id="tid" name="tid" required>
-          <p class="error" id="tid-error">Registrer tidspunkt</p>
+            <div class="form-group">
+              <label for="indberet">Hvad indberetter du?</label>
+              <textarea id="indberet" name="indberet" cols="40" rows="8"
+                placeholder="Beskriv i så mange detaljer som muligt" required minlength="10"></textarea>
+              <p class="error" id="indberet-error">Skriv mindst 10 tegn</p>
+            </div>
+            <div class="form-group">
+              <p>Registrer tid og sted for episoden</p>
+              <label for="tid">Tid</label>
+              <input type="datetime-local" id="tid" name="tid" required>
+              <p class="error" id="tid-error">Registrer tidspunkt</p>
 
-          <label for="sted">Sted</label>
-          <input type="text" id="sted" name="sted" required>
-          <p class="error" id="tid-error">Registrer sted</p>
-        </div>
-        <div class="form-group">
-          <label for="bemaerk"> Andre bemærkninger? <span class="optional">(Kan udelades)</span> </label>
-          <textarea name="bemaerk" id="bemaerk" cols="40" rows="8"></textarea>
-        </div>
+              <label for="sted">Sted</label>
+              <input type="text" id="sted" name="sted" required>
+              <p class="error" id="tid-error">Registrer sted</p>
+            </div>
+            <div class="form-group">
+              <label for="bemaerk"> Andre bemærkninger? <span class="optional">(Kan udelades)</span> </label>
+              <textarea name="bemaerk" id="bemaerk" cols="40" rows="8"></textarea>
+            </div>
 
-        <button class="form-knap" type="submit">Indberet</button>
-      </form>
-    </section>
-    <section id="form-summary">
-      <h2>Din indberetning</h2>
-      <article>
-        <p> <span id="outputEmail"></span></p>
-        <p> <span id="outputKontakt"></span></p>
-        <p> <span id="outputIndberet"></span></p>
-        <p> <span id="outputTid"></span></p>
-        <p> <span id="outputSted"></span></p>
-        <p> <span id="outputBemaerk"></span></p>
-      </article>
-    </section>
+            <button class="form-knap" type="submit">Indberet</button>
+          </form>
+        </section>
+      </section>
+      <section id="form-summary">
+        <h2>Din indberetning</h2>
+        <article>
+          <p> <span id="outputEmail">Her kan du se en opsummering af din indberetning, når du har udfyldt
+              formularen</span></p>
+          <p> <span id="outputKontakt"></span></p>
+          <p> <span id="outputIndberet"></span></p>
+          <p> <span id="outputTid"></span></p>
+          <p> <span id="outputSted"></span></p>
+          <p> <span id="outputBemaerk"></span></p>
+        </article>
+      </section>
+    </div>
   </main>
   <footer>
     <nav>
       <ul>
-        <li><a href="#">link</a></li>
-        <li><a href="#">link</a></li>
-        <li><a href="#">link</a></li>
-        <li><a href="#">link</a></li>
+        <li><a href="indberet.html">Indberet forurening af drikkevand</a></li>
+
       </ul>
       <ul>
-        <li><a href="#">link</a></li>
-        <li><a href="#">link</a></li>
-        <li><a href="#">link</a></li>
-        <li><a href="#">link</a></li>
+        <li><a href="infografik.html">Lær om forurening af drikkevand</a></li>
+
       </ul>
       <ul>
-        <li><a href="#">link</a></li>
-        <li><a href="#">link</a></li>
-        <li><a href="#">link</a></li>
-        <li><a href="#">link</a></li>
+        <li><a href="#news">Se seneste nyt</a></li>
+
       </ul>
     </nav>
   </footer>
   <script src="js/main.js"></script>
+  <script src="js/burger.js"></script>
+  <script src="js/dark-mode.js"></script>
 
 </body>
 

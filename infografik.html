@@ -11,21 +11,29 @@
   <link rel="stylesheet" href="css/burger.css">
   <link rel="stylesheet" href="css/cards.css">
   <link rel="stylesheet" href="css/infographic.css">
+  <link rel="stylesheet" href="css/dark-mode.css">
   <link rel="icon" type="image/png" href="img/favicon.png">
   <title>Emergency Site</title>
 </head>
 
 <body id="instruction">
   <header>
+
     <nav>
       <div id="logotype-wrapper" class="logo">
-        <a href="index.html"> LOGO-TYPE </a>
+        <a href="index.html"> <img src="img/logo/Logo-text.svg" alt="Logo og teksten Vand Varsling" width="200"> </a>
       </div>
       <ul class="menu">
-        <li><a class="menuItem" href="instruction.html">Nærkontakt </a></li>
-        <li><a class="menuItem" href="register.html">Indberet</a></li>
+        <li><a class="menuItem" href="index.html">Forside</a></li>
+        <li><a class="menuItem" href="infografik.html">Lær mere</a></li>
+        <li><a class="menuItem" href="indberet.html">Indberet</a></li>
+        <li> <label>
+            <span class="visually-hidden">Theme</span>
+            <input id="theme-toggle" type="checkbox">
+          </label></li>
       </ul>
       <button class="burger">
+        <span class="line"></span>
         <span class="line"></span>
         <span class="line"></span>
         <span class="line"></span>
@@ -1768,37 +1776,32 @@
     <section class="info-text">
       <h2>Information</h2>
       <article>
-        <p class="placeholder">Lær om </p>
+        <p class="placeholder"> </p>
       </article>
-      <aside id="facts" class="info-box"></aside>
-      <aside id="forklaring" class="info-box"></aside>
+      <aside id="facts" class="info-box">Fakta</aside>
+      <aside id="forklaring" class="info-box">Forklaring</aside>
     </section>
   </main>
 
   <footer>
     <nav>
       <ul>
-        <li><a href="#">link</a></li>
-        <li><a href="#">link</a></li>
-        <li><a href="#">link</a></li>
-        <li><a href="#">link</a></li>
+        <li><a href="indberet.html">Indberet forurening af drikkevand</a></li>
+
       </ul>
       <ul>
-        <li><a href="#">link</a></li>
-        <li><a href="#">link</a></li>
-        <li><a href="#">link</a></li>
-        <li><a href="#">link</a></li>
+        <li><a href="infografik.html">Lær om forurening af drikkevand</a></li>
+
       </ul>
       <ul>
-        <li><a href="#">link</a></li>
-        <li><a href="#">link</a></li>
-        <li><a href="#">link</a></li>
-        <li><a href="#">link</a></li>
+        <li><a href="#news">Se seneste nyt</a></li>
+
       </ul>
     </nav>
   </footer>
   <script src="js/main.js"></script>
   <script src="js/infografik.js"></script>
+  <script src="js/dark-mode.js"></script>
 </body>
 
 </html>

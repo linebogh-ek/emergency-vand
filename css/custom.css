@@ -57,8 +57,14 @@ html.dark {
   --font-color: light-dark(#000f15, #f1f1f1);
 
   /* HEADER */
-  --nav-grad-start: light-dark(#e9f6ff, #012d4f);
-  --nav-grad-end: light-dark(#007bda, #006abd);
+  --nav-grad-start: light-dark(#e9f6ff, #021e34);
+  --nav-grad-end: light-dark(#007bda, #023a64);
+
+  --a-layer-1: light-dark(#cde3f2, #474d5258);
+  --a-layer-2: light-dark(#fafafa, #3d4348);
+  --a-layer-3: light-dark(#eef4f8, #606569);
+  --a-text: light-dark(#212529, #dedfe0);
+  --a-border: light-dark(#fafafa, #2f373c);
 }
 
 /* STARTER PACK - YES  */
