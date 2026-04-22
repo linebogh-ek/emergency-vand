@@ -6,7 +6,7 @@
   background: gainsboro;
   height: var(--h);
   width: var(--w);
-  border: 1px solid var(--black)
+  border: 1px solid var(--black);
   cursor: pointer;
   border-radius: 9999px;
 }
