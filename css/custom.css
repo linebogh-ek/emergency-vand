@@ -2,42 +2,6 @@ html.dark {
   color-scheme: dark;
 }
 
-:root {
-  /* Header background color */
-  /* --color-head-bg: #e4fbff; */
-
-  /* Logotype
-  --color-logotype-bg: #f1feff;
-  --color-text-logotype: #e3f8ff;
-  --font-logotype-size: 1rem; */
-
-  /* Global menu
-  --color-menu-bg: var(--blue-3); */
-
-  /* --headline2-size: 1rem;
-  --headline3-size: 1rem;
-  --font-sub1-size: 1rem; */
-
-  /* Headlines (color)
-  --color-headline-bg: #ffffff; */
-
-  /* Tekst */
-  /* --color-text: var(--black);
-  --color-text-inverted: #cdccc4; */
-
-  /* Andet tekst
-  --followup-text-size: 1rem;
-  
-   Margins
-  --margin-head-bottom: 5px;
-  
-  Cards
-  --color-card-bg: var(--medium-grey);
-  --color-card-bg-inverted: #85b9ed;
-  --color-cta-card-bg: #847f7e;
-  --color-cta-card-bg-inverted: #c0bfb9; */
-}
-
 /* MY STYLING */
 :root {
   /* 
@@ -60,6 +24,8 @@ html.dark {
   --nav-grad-start: light-dark(#e9f6ff, #021e34);
   --nav-grad-end: light-dark(#007bda, #023a64);
 
+  /* LAYERS */
+
   --a-layer-1: light-dark(#cde3f2, #474d5258);
   --a-layer-2: light-dark(#fafafa, #3d4348);
   --a-layer-3: light-dark(#eef4f8, #606569);
@@ -67,7 +33,7 @@ html.dark {
   --a-border: light-dark(#fafafa, #2f373c);
 }
 
-/* STARTER PACK - YES  */
+/* PLUKKET FRA STARTER-KODE */
 
 :root {
   /* Borders - YES */

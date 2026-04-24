@@ -133,8 +133,6 @@ main {
   flex-direction: column;
 }
 
-/* DELETED STARTER CODE */
-
 #main-disclamer {
   height: 225px;
   background-color: var(--color-head-bg);
@@ -156,50 +154,3 @@ main > h1 {
 Pilen efter menu-tekst header > nav li > a:after {
   content: " \2192";
 }
-
-/*
-
-
-.nyhed {
-  background-color: azure;
-  margin: 2rem;
-  text-decoration: none;
-}
-
-.nyhed > a {
-  text-decoration: none;
-}
-
-.nyhed_horisontal {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 1rem;
-  padding: 40px 0 40px 20px;
-  height: minmax(200px, min-content);
-}
-
-.nyhed_img {
-  width: 100%;
-  max-width: 300px;
-}
-
-.nyhed_titel {
-  width: 100%;
-  text-decoration: none;
-  color: var(--black);
-  font-size: 1.5rem;
-  padding: calc(1.1rem / 1.5) 1rem calc(1.1rem / 2) 1rem;
-  margin: 0 0 0.5rem 0;
-}
-
-.nyhed_vertikal {
-  align-items: center;
-  padding: 2rem;
-  gap: 1rem;
-}
-
-.nyhed_vertikal > h2 {
-  max-width: 300px;
-}
-
-*/
