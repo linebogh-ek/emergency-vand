@@ -23,6 +23,6 @@
 }
 
 #theme-toggle:checked::before {
-  background-color: green;
+  background-color: rgb(90, 211, 90);
   translate: calc(var(--w) - var(--h));
 }
